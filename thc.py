@@ -47,7 +47,7 @@ HEIGHT = disp.height  # ディスプレイ高さ
 
 
 # 温湿度を取得
-def get_temp(self):
+def get_temp():
     instance = dht11.DHT11(pin=TEMP_SENSOR_PIN)
     retry_count = 0
     # MAX_RETRY回まで繰り返す
